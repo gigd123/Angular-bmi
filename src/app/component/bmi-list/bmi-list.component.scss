@@ -1,0 +1,17 @@
+@import "../../styles/main.scss";
+.main{
+  background: #F5F5F5;
+  .data-list {
+    li{
+        font-size: $font-s*1.1;
+        padding: 15px 10px;
+        background-color: #fff;
+        margin-bottom: 15px;
+
+       span{
+           font-size: $font-s*0.8;
+       }
+    }
+
+}
+}

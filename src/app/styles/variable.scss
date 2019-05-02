@@ -1,0 +1,30 @@
+
+/*通用css*/
+$c-gold:#FFD366;
+$c-green:#86D73F;
+$c-blue:#31BAF9;
+$c-orange1:#FF982D;
+$c-orange2:#FF6C03;
+$c-orange3:#FF6C03;
+$c-red:#FF1200;
+$c-grey:#424242;
+$font-s:16px;
+$border-2:4px solid;
+.border-l-g{
+    border-left: $border-2 $c-green;
+}
+.border-l-b{
+    border-left: $border-2 $c-blue;
+}
+.border-l-o1{
+    border-left: $border-2 $c-orange1;
+}
+.border-l-o2{
+    border-left: $border-2 $c-orange2;
+}
+.border-l-o3{
+    border-left: $border-2 $c-orange3;
+}
+.border-l-r{
+    border-left: $border-2 $c-red;
+}

@@ -1,0 +1,12 @@
+@import "../../styles/main.scss";
+footer{
+  background-color: $c-gold;
+  .footer-logo{
+      width: 55px;
+      height: 55px;
+      background-image: url('../../../assets/img/BMIC-footerLogo.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+}

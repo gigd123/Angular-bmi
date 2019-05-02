@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'bmi-todolist',
+  selector: 'app-bmi-todolist',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
