@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AngularFirestore } from 'angularfire2/firestore';
 
 @Component({
   selector: 'app-bmi-todolist',
@@ -8,4 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-bmi';
 
+  constructor(private afs: AngularFirestore) {
+    console.log(afs);
+  }
 }

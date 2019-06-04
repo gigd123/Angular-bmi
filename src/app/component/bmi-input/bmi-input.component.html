@@ -6,16 +6,16 @@
               <label for="myHeight" class="mb-2">身高
                   <span>cm</span>
               </label>
-              <input type="text" name="" id="myHeight" class="rounded mb-3" placeholder="">
+              <input type="text" id="userHeight" class="rounded mb-3" placeholder="" [(ngModel)]="userHeight" name="userHeight" required>
               <label for="myWeight" class="mb-2">體重
                   <span>kg</span>
               </label>
-              <input type="text" name="" id="myWeight" class="rounded" placeholder="">
+              <input type="text" id="userWeight" class="rounded" placeholder="" [(ngModel)]="userWeight" name="userWeight" required>
           </form>
       </div>
   </div>
   <div class="bmi-btnBox col pt-4">
-      <button id="send" class="send-btn">
+      <button id="send" class="send-btn" (click)="this.userData.next({height:userHeight, weight:userWeight})">
           <span class="hit">看結果</span>
           <p class="bmi-value"></p>
           <p class="bmi-onBtn">BMI</p>

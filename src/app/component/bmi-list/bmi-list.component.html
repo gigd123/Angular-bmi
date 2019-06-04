@@ -1,7 +1,11 @@
 <section class="main container-fluid">
   <div class="container">
-      <ul class="data-list w-75 mx-auto pt-5 pb-5">
-
+      <ul class="data-list w-75 mx-auto pt-5 pb-5" *ngFor="let user of users | async">
+        <li>{{user.Name}}</li>
+        <li>{{user.Weight}}</li>
+        <li>{{user.Height}}</li>
+        <li>{{user.Bmi}}</li>
+        <li>{{user.Gender}}</li>
       </ul>
   </div>
 </section>

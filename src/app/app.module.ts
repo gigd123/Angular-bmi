@@ -7,6 +7,10 @@ import { BmiInputComponent } from './component/bmi-input/bmi-input.component';
 import { BmiFooterComponent } from './component/bmi-footer/bmi-footer.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule} from 'angularfire2/firestore';
+import { FireBaseService } from './services/fire-base.service';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 // Initialize Firebase
 const config = {
@@ -29,9 +33,11 @@ const config = {
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(config),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [FireBaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
